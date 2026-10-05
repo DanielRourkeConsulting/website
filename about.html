@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultancy Services — Daniel Rourke Consulting</title>
+  <meta name="description" content="Consultancy services for NGOs and Legal Aid providers from Daniel Rourke: training, campaigns, and advice on IAA and LAA contract issues." />
+  <link rel="icon" href="assets/images/profile2.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html"><img class="logo-img" src="assets/images/logo.png" alt="Daniel Rourke Consulting" /></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="immigration-advice.html">Immigration Advice</a>
+        <a href="about.html" class="active">Consultancy Services</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" style="background-image: linear-gradient(rgba(20, 45, 36, 0.55), rgba(20, 45, 36, 0.4)), url('assets/images/plane-home.jpg');">
+      <div class="wrap bio-grid" style="align-items:center;">
+        <div>
+          <h1>Experience</h1>
+          <p style="color: var(--white-warm);">With over 15 years' experience of strategic litigation, campaigning and management across the legal aid, immigration and charity sectors, I help communicate complex legal issues with clarity and impact. An experienced public law and immigration lawyer, I support new legal aid providers and NGOs to develop their casework services. I am available to help navigate Legal Aid Agency &amp; IAA compliance, strengthen supervision, and embed good practice from the start.</p>
+          <a class="btn btn-primary" href="#enquiry">Complete my enquiry form</a>
+        </div>
+        <div>
+          <img src="assets/images/profile2.png" alt="Daniel Rourke" />
+        </div>
+      </div>
+    </section>
+
+    <section class="illustration-band" style="background-image: url('assets/images/illustration-a1.png');">
+      <div class="wrap">
+        <div class="service-list" style="padding: 50px 0;">
+          <div class="service-item">
+            <h2 style="margin-top:0;">Training</h2>
+            <p>I deliver bespoke on-demand or live training to legal professionals, support workers and policy stakeholders: tailored to your organisation's needs, designed to be engaging, and grounded in practical experience.</p>
+          </div>
+          <div class="service-item">
+            <h2 style="margin-top:0;">Campaigns</h2>
+            <p>I support NGOs and legal organisations in designing and delivering evidence-based campaigns. I am available to draft reports, consultation &amp; inquiry responses, advise on strategy &amp; messaging and design original illustrations for NGO reports and social media.</p>
+          </div>
+          <div class="service-item">
+            <h2 style="margin-top:0;">Advice</h2>
+            <p>I provide independent, practical guidance on legal aid contract management, quality assurance and IAA regulation, drawing on extensive experience as a Caseworker, Supervisor and Senior Manager.</p>
+            <p>This includes support with audits, legal aid reductions &amp; recoupments, supervision and accreditation compliance, as well as registration, re-registration, and supervision plans for caseworkers progressing through IAA levels.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="enquiry">
+      <div class="wrap">
+        <h2>Enquire about my consultancy services</h2>
+        <div class="enquiry">
+          <div class="note">
+            <ul>
+              <li>No obligation.</li>
+              <li>Free initial consultation to discuss your needs.</li>
+            </ul>
+          </div>
+
+          <!-- Connect this form to Formspree: replace YOUR_FORM_ID with your real Formspree form ID -->
+          <form class="enquiry-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="hidden" name="form_name" value="Consultancy enquiry" />
+
+            <div class="form-row">
+              <div class="field">
+                <label for="con-first-name">First Name <span class="req">(required)</span></label>
+                <input type="text" id="con-first-name" name="first_name" required />
+              </div>
+              <div class="field">
+                <label for="con-last-name">Last Name <span class="req">(required)</span></label>
+                <input type="text" id="con-last-name" name="last_name" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="con-org">Organisation</label>
+              <input type="text" id="con-org" name="organisation" />
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="con-email">Email <span class="req">(required)</span></label>
+                <input type="email" id="con-email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="con-phone">Phone</label>
+                <input type="tel" id="con-phone" name="phone" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label>What services are you interested in?</label>
+              <div class="pill-group">
+                <input type="radio" id="con-services-1" name="services" value="Training" />
+                <label for="con-services-1">Training</label>
+                <input type="radio" id="con-services-2" name="services" value="Campaigns" />
+                <label for="con-services-2">Campaigns</label>
+                <input type="radio" id="con-services-3" name="services" value="(Non-legal) advice" />
+                <label for="con-services-3">(Non-legal) advice</label>
+                <input type="radio" id="con-services-4" name="services" value="Something else" />
+                <label for="con-services-4">Something else</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="con-details">Project Details <span class="req">(required)</span></label>
+              <textarea id="con-details" name="details" required></textarea>
+            </div>
+
+            <div class="submit-row">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+            <div class="form-status" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p><strong>Daniel Rourke</strong></p>
+      </div>
+      <div>
+        <p>Consultant immigration solicitor with <a href="https://lawhive.co.uk/" target="_blank" rel="noopener">Lawhive</a>.</p>
+        <p>All legal advice instructions accepted through Lawhive Legal Ltd. SRA Profile: <a href="https://www.sra.org.uk/consumers/register/person/?sraNumber=542800&prevSearchText=542800&prevSearchFilter=" target="_blank" rel="noopener">Daniel Luke Rourke</a> | SRA Profile: <a href="https://www.sra.org.uk/consumers/register/organisation/?sraNumber=8003766" target="_blank" rel="noopener">Lawhive Legal Ltd.</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="immigration-advice.html#enquiry">Immigration enquiry form</a>
+        <a href="about.html#enquiry">Consultancy enquiry form</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
