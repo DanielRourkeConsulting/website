@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('form.enquiry-form').forEach((form) => {
     form.addEventListener('submit', async (e) => {
       const action = form.getAttribute('action') || '';
-      if (!action || action.includes('YOUR_FORM_ID')) {
+      if (!action) {
         e.preventDefault();
         const status = form.querySelector('.form-status');
         if (status) {

@@ -12,15 +12,14 @@ Static rebuild of the Daniel Rourke Consulting site (originally on Squarespace),
 - `assets/images/` — site images
 - `CNAME` — custom domain for GitHub Pages (`www.rourkeconsulting.co.uk`)
 
-## Enquiry forms (Formspree)
+## Enquiry forms (Formspark)
 
-The two enquiry forms (`immigration-advice.html` and `about.html`) post to [Formspree](https://formspree.io). Before going live:
+The two enquiry forms post to [Formspark](https://formspark.io):
 
-1. Create a free Formspree account and a form for each page (or reuse one form for both — the hidden `form_name` field identifies which page a submission came from).
-2. Replace `YOUR_FORM_ID` in the `action="https://formspree.io/f/YOUR_FORM_ID"` attribute of each `<form class="enquiry-form">` with your real form ID.
-3. In Formspree, set the destination email to `daniel.rourke@lawhivelegal.com` (or wherever enquiries should land).
+- `immigration-advice.html` → `https://submit-form.com/rAv71weBW`
+- `about.html` → `https://submit-form.com/s6k4mG76z`
 
-Until the form IDs are set, submitting a form shows a message asking the visitor to email directly instead — it won't error silently.
+Submissions land wherever each Formspark form is configured to notify (check the Formspark dashboard for each form's destination email). If you ever need to change the endpoint, just edit the `action` attribute on the `<form class="enquiry-form">` in the relevant page.
 
 ## Deploying to GitHub Pages
 
