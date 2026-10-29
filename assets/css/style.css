@@ -308,6 +308,10 @@ img {
   background: var(--white-warm);
 }
 
+.illustration-band .service-list {
+  margin: 0;
+}
+
 /* Pill radio group */
 
 .pill-group {
