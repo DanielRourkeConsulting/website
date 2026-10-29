@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="8" fill="#f8ede0"/>
+  <g transform="translate(2.5,8.5) scale(0.95)">
+    <text x="1" y="24" font-family="Poppins, system-ui, sans-serif" font-weight="700" font-size="26" fill="#1D3B2F">DR</text>
+    <text x="34" y="37" font-family="Poppins, system-ui, sans-serif" font-weight="700" font-size="24" fill="#E9A843">C</text>
+    <path d="M2 45 Q32 34.25 62 43 Q32 37.75 2 45 Z" fill="#1D3B2F"/>
+  </g>
+</svg>
