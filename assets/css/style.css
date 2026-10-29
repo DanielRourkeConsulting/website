@@ -188,7 +188,9 @@ img {
 
 .hero-photo img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: top center;
 }
 
 .hero-list {
@@ -554,11 +556,22 @@ form.enquiry-form {
 
   .hero-photo {
     order: -1;
-    max-height: 320px;
+    height: min(320px, 70vw);
   }
 
-  .two-col {
+  .two-col,
+  .bio-grid {
     grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .bio-grid img {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .page-hero {
+    padding: 60px 0 50px;
   }
 
   .footer-grid {
@@ -602,5 +615,17 @@ form.enquiry-form {
 
   .page-hero h1 {
     font-size: 1.9rem;
+  }
+
+  .enquiry {
+    padding: 24px 20px;
+  }
+
+  .callout {
+    padding: 22px 20px;
+  }
+
+  .bio {
+    padding: 24px 20px;
   }
 }
