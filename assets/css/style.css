@@ -301,27 +301,11 @@ img {
 /* Illustration band */
 
 .illustration-band {
-  position: relative;
   background: #1f6b73;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.illustration-band::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(31, 107, 115, 0.55);
-}
-
-.illustration-band .wrap {
-  position: relative;
-  z-index: 1;
 }
 
 .illustration-band .service-item {
-  background: rgba(254, 250, 246, 0.88);
+  background: var(--white-warm);
 }
 
 /* Pill radio group */
