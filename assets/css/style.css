@@ -165,7 +165,6 @@ img {
   padding: 36px 28px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .hero-panel h1 {
@@ -175,8 +174,8 @@ img {
   margin: 0 0 24px;
 }
 
-.hero-panel .btn-row {
-  margin-top: auto;
+.hero-panel h1 {
+  flex-grow: 1;
 }
 
 .hero-photo {
@@ -202,12 +201,6 @@ img {
 
 .hero-list li {
   margin-bottom: 10px;
-}
-
-.hero-grid > .hero-list {
-  margin: 24px 0 50px 24px;
-  overflow-wrap: break-word;
-  min-width: 0;
 }
 
 .hero-panel h1 {
@@ -547,15 +540,8 @@ form.enquiry-form {
     grid-template-columns: 1fr;
   }
 
-  /* Stack: photo, panel 1 + its list, panel 2 + its list */
-  .hero-photo { order: 0; }
-  .hero-panel-1 { order: 1; }
-  .hero-list-1 { order: 2; margin-bottom: 24px; }
-  .hero-panel-2 { order: 3; }
-  .hero-list-2 { order: 4; }
-  .hero-grid > .spacer { display: none; }
-
   .hero-photo {
+    order: -1;
     height: min(320px, 70vw);
   }
 
