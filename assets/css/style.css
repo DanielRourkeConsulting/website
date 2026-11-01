@@ -425,6 +425,7 @@ img {
 
 form.enquiry-form {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 18px;
 }
 
@@ -435,6 +436,7 @@ form.enquiry-form {
 }
 
 .field {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -452,6 +454,8 @@ form.enquiry-form {
 .field input,
 .field select,
 .field textarea {
+  max-width: 100%;
+  box-sizing: border-box;
   font-family: inherit;
   font-size: 1rem;
   padding: 12px 14px;
@@ -571,7 +575,7 @@ form.enquiry-form {
   }
 
   .form-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
