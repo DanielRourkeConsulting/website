@@ -204,20 +204,14 @@ img {
   margin-bottom: 10px;
 }
 
-.hero-list-standalone {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1.1fr 1fr;
-  padding: 0 24px 50px;
+.hero-grid > .hero-list {
+  margin: 24px 0 50px 24px;
+  overflow-wrap: break-word;
+  min-width: 0;
 }
 
-.hero-list-standalone .hero-list {
-  padding-top: 0;
-}
-
-.hero-list-standalone .spacer {
-  /* keeps middle column empty under the photo */
+.hero-panel h1 {
+  overflow-wrap: break-word;
 }
 
 /* Page hero banner (sub-pages) */
@@ -549,13 +543,19 @@ form.enquiry-form {
 /* Responsive */
 
 @media (max-width: 860px) {
-  .hero-grid,
-  .hero-list-standalone {
+  .hero-grid {
     grid-template-columns: 1fr;
   }
 
+  /* Stack: photo, panel 1 + its list, panel 2 + its list */
+  .hero-photo { order: 0; }
+  .hero-panel-1 { order: 1; }
+  .hero-list-1 { order: 2; margin-bottom: 24px; }
+  .hero-panel-2 { order: 3; }
+  .hero-list-2 { order: 4; }
+  .hero-grid > .spacer { display: none; }
+
   .hero-photo {
-    order: -1;
     height: min(320px, 70vw);
   }
 
