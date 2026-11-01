@@ -57,3 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.filter-btn');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      buttons.forEach((b) => b.classList.toggle('active', b === btn));
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.writing-item').forEach((item) => {
+        item.hidden = f !== 'all' && item.dataset.type !== f;
+      });
+    });
+  });
+});

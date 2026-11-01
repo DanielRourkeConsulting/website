@@ -619,3 +619,76 @@ form.enquiry-form {
     padding: 24px 20px;
   }
 }
+
+/* Home: quiet secondary link */
+
+.home-more {
+  text-align: center;
+  margin: 0 0 48px;
+  font-size: 0.95rem;
+}
+
+.home-more a {
+  font-weight: 500;
+}
+
+/* Writing page */
+
+.writing-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.filter-btn {
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--green);
+  background: transparent;
+  border: 2px solid var(--green);
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--green);
+  color: var(--white-warm);
+}
+
+.writing-item {
+  background: var(--white-warm);
+  border-left: 6px solid var(--orange);
+  border-radius: 4px;
+  padding: 22px 26px;
+  margin-bottom: 18px;
+}
+
+.writing-item[hidden] {
+  display: none;
+}
+
+.writing-item h3 {
+  margin: 4px 0 8px;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.writing-item p {
+  margin: 0;
+}
+
+.writing-item .writing-meta {
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.writing-item .tag {
+  background: var(--orange-soft);
+  border-radius: 3px;
+  padding: 2px 8px;
+  margin-right: 6px;
+  font-weight: 500;
+}
