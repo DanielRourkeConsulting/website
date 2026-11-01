@@ -165,7 +165,6 @@ img {
   padding: 36px 28px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .hero-panel h1 {
@@ -175,8 +174,8 @@ img {
   margin: 0 0 24px;
 }
 
-.hero-panel .btn-row {
-  margin-top: auto;
+.hero-panel h1 {
+  flex-grow: 1;
 }
 
 .hero-photo {
@@ -204,20 +203,8 @@ img {
   margin-bottom: 10px;
 }
 
-.hero-list-standalone {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1.1fr 1fr;
-  padding: 0 24px 50px;
-}
-
-.hero-list-standalone .hero-list {
-  padding-top: 0;
-}
-
-.hero-list-standalone .spacer {
-  /* keeps middle column empty under the photo */
+.hero-panel h1 {
+  overflow-wrap: break-word;
 }
 
 /* Page hero banner (sub-pages) */
@@ -549,8 +536,7 @@ form.enquiry-form {
 /* Responsive */
 
 @media (max-width: 860px) {
-  .hero-grid,
-  .hero-list-standalone {
+  .hero-grid {
     grid-template-columns: 1fr;
   }
 
