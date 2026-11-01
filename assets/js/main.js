@@ -64,9 +64,28 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       buttons.forEach((b) => b.classList.toggle('active', b === btn));
       const f = btn.dataset.filter;
-      document.querySelectorAll('.writing-item').forEach((item) => {
+      document.querySelectorAll('.writing-list .writing-item').forEach((item) => {
         item.hidden = f !== 'all' && item.dataset.type !== f;
       });
     });
   });
+});
+
+/* Writing page: surface the newest item of each type in a "Latest" strip */
+document.addEventListener('DOMContentLoaded', () => {
+  const box = document.querySelector('.latest');
+  if (!box) return;
+  const grid = box.querySelector('.latest-grid');
+  const newest = {};
+  document.querySelectorAll('.writing-list .writing-item').forEach((el) => {
+    const t = el.dataset.type;
+    if (!newest[t] || el.dataset.date > newest[t].dataset.date) newest[t] = el;
+  });
+  ['article', 'publication', 'commentary'].forEach((t) => {
+    if (!newest[t]) return;
+    const card = newest[t].cloneNode(true);
+    card.classList.add('latest-card');
+    grid.appendChild(card);
+  });
+  box.hidden = !grid.children.length;
 });

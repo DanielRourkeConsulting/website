@@ -35,6 +35,11 @@
 
     <section class="section">
       <div class="wrap">
+        <section class="latest" aria-label="Latest writing" hidden>
+          <h2>Latest</h2>
+          <div class="latest-grid"></div>
+        </section>
+
         <div class="writing-filter" role="group" aria-label="Filter by type">
           <button class="filter-btn active" data-filter="all">All</button>
           <button class="filter-btn" data-filter="article">Articles</button>
@@ -42,22 +47,32 @@
           <button class="filter-btn" data-filter="commentary">Commentary</button>
         </div>
 
+        <h2 class="all-heading">All writing</h2>
         <div class="writing-list">
-        <article class="writing-item" data-type="article">
-          <p class="writing-meta"><span class="tag">Article</span> Publication name &middot; 2026</p>
-          <h3><a href="#">Placeholder: article title</a></h3>
-          <p>One or two sentences on what the piece argues and why it matters.</p>
-        </article>
-        <article class="writing-item" data-type="publication">
-          <p class="writing-meta"><span class="tag">Publication</span> Publisher / organisation &middot; 2025</p>
-          <h3><a href="#">Placeholder: report or chapter title</a></h3>
-          <p>One or two sentences describing the work and your role in it.</p>
-        </article>
-        <article class="writing-item" data-type="commentary">
-          <p class="writing-meta"><span class="tag">Commentary</span> Outlet &middot; 2025</p>
-          <h3><a href="#">Placeholder: blog post or commentary</a></h3>
-          <p>One or two sentences summarising the piece.</p>
-        </article>
+          <article class="writing-item" data-type="article" data-date="2026-03-01" data-source="Free Movement">
+            <p class="writing-meta"><span class="tag">Article</span> Free Movement &middot; <time datetime="2026-03-01">2026</time></p>
+            <h3>Placeholder: Free Movement article title</h3>
+            <p>Short summary in your own words (or the permitted standfirst) &mdash; not the full text.</p>
+            <p class="writing-links"><a class="read-link" href="https://freemovement.org.uk/author/drourke/" target="_blank" rel="noopener">Read on Free Movement &#8599;</a><span class="copyright-note">&copy; Free Movement. Full text available at source.</span></p>
+          </article>
+          <article class="writing-item" data-type="article" data-date="2025-06-01" data-source="Free Movement">
+            <p class="writing-meta"><span class="tag">Article</span> Free Movement &middot; <time datetime="2025-06-01">2025</time></p>
+            <h3>Placeholder: earlier article title</h3>
+            <p>Short summary in your own words.</p>
+            <p class="writing-links"><a class="read-link" href="https://freemovement.org.uk/author/drourke/" target="_blank" rel="noopener">Read on Free Movement &#8599;</a><span class="copyright-note">&copy; Free Movement. Full text available at source.</span></p>
+          </article>
+          <article class="writing-item" data-type="publication" data-date="2025-09-01">
+            <p class="writing-meta"><span class="tag">Publication</span> Publisher / organisation &middot; <time datetime="2025-09-01">2025</time></p>
+            <h3>Placeholder: report or chapter title</h3>
+            <p>One or two sentences describing the work and your role in it.</p>
+            <p class="writing-links"><a class="read-link" href="#">Read &rarr;</a></p>
+          </article>
+          <article class="writing-item" data-type="commentary" data-date="2025-11-01">
+            <p class="writing-meta"><span class="tag">Commentary</span> Outlet &middot; <time datetime="2025-11-01">2025</time></p>
+            <h3>Placeholder: blog post or commentary</h3>
+            <p>One or two sentences summarising the piece.</p>
+            <p class="writing-links"><a class="read-link" href="#">Read &rarr;</a></p>
+          </article>
         </div>
 
         <div class="callout">
